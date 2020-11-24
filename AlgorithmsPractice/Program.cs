@@ -1,4 +1,5 @@
 ﻿using AlgorithmsPractice.LinkedList;
+using AlgorithmsPractice.Stacks_Queues;
 using AlgorithmsPractice.Strings_Arrays;
 using System;
 using System.Collections.Generic;
@@ -58,16 +59,29 @@ namespace AlgorithmsPractice
             //SumListsClass.SumListsRecursion(firstList, secondList).PrintList();
 
             // TEST Palindrome
-            var linkedList = new SinglyLinkedList();
-            linkedList.Append(3);
-            linkedList.Append(2);
-            linkedList.Append(1);
-            linkedList.Append(100);
-            linkedList.Append(1);
-            linkedList.Append(2);
-            linkedList.Append(3);
+            //var linkedList = new SinglyLinkedList();
+            //linkedList.Append(3);
+            //linkedList.Append(2);
+            //linkedList.Append(1);
+            //linkedList.Append(100);
+            //linkedList.Append(1);
+            //linkedList.Append(2);
+            //linkedList.Append(3);
 
-            Console.WriteLine(PalindromeClass.Palindrome(linkedList));
+            //Console.WriteLine(PalindromeClass.Palindrome(linkedList));
+
+            // TEST StackMin
+            var stack = new StackMinClass();
+            stack.push(7);
+            stack.push(17);
+            stack.push(32);
+            stack.push(3);
+            stack.push(19);
+            stack.push(8);
+            stack.pop();
+            stack.pop();
+            stack.pop();
+            Console.WriteLine(stack.min());
 
             Console.ReadKey();
         }
