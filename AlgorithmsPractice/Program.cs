@@ -71,17 +71,42 @@ namespace AlgorithmsPractice
             //Console.WriteLine(PalindromeClass.Palindrome(linkedList));
 
             // TEST StackMin
-            var stack = new StackMinClass();
-            stack.push(7);
-            stack.push(17);
-            stack.push(32);
+            //var stack = new StackMinClass();
+            //stack.push(7);
+            //stack.push(17);
+            //stack.push(32);
+            //stack.push(3);
+            //stack.push(19);
+            //stack.push(8);
+            //stack.pop();
+            //stack.pop();
+            //stack.pop();
+            //Console.WriteLine(stack.min());
+
+            // TEST SetOfStacks
+            var stack = new SetOfStacks(5);
+            stack.push(1);
+            stack.push(2);
             stack.push(3);
-            stack.push(19);
+            stack.push(4);
+            stack.push(5);
+
+            stack.push(6);
+            stack.push(7);
             stack.push(8);
-            stack.pop();
-            stack.pop();
-            stack.pop();
-            Console.WriteLine(stack.min());
+            stack.push(9);
+            stack.push(10);
+
+            stack.push(11);
+            stack.push(12);
+            stack.push(13);
+            stack.push(14);
+            stack.push(15);
+
+            stack.popAt(0);
+            stack.popAt(1);
+            stack.popAt(2);
+            stack.PrintStack();
 
             Console.ReadKey();
         }
