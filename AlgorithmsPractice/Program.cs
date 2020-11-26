@@ -84,29 +84,42 @@ namespace AlgorithmsPractice
             //Console.WriteLine(stack.min());
 
             // TEST SetOfStacks
-            var stack = new SetOfStacks(5);
-            stack.push(1);
-            stack.push(2);
-            stack.push(3);
-            stack.push(4);
-            stack.push(5);
+            //var stack = new SetOfStacks(5);
+            //stack.push(1);
+            //stack.push(2);
+            //stack.push(3);
+            //stack.push(4);
+            //stack.push(5);
 
-            stack.push(6);
-            stack.push(7);
-            stack.push(8);
-            stack.push(9);
-            stack.push(10);
+            //stack.push(6);
+            //stack.push(7);
+            //stack.push(8);
+            //stack.push(9);
+            //stack.push(10);
 
-            stack.push(11);
-            stack.push(12);
-            stack.push(13);
-            stack.push(14);
-            stack.push(15);
+            //stack.push(11);
+            //stack.push(12);
+            //stack.push(13);
+            //stack.push(14);
+            //stack.push(15);
 
-            stack.popAt(0);
-            stack.popAt(1);
-            stack.popAt(2);
-            stack.PrintStack();
+            //stack.popAt(0);
+            //stack.popAt(1);
+            //stack.popAt(2);
+            //stack.PrintStack();
+
+
+            // TEST AnimalShelter
+            var stack = new AnimalShelter();
+            stack.enqueue(AnimalShelter.Animal.Cat);
+            stack.enqueue(AnimalShelter.Animal.Cat);
+            stack.enqueue(AnimalShelter.Animal.Dog);
+            stack.enqueue(AnimalShelter.Animal.Cat);
+            stack.enqueue(AnimalShelter.Animal.Dog);
+            stack.enqueue(AnimalShelter.Animal.Cat);
+            stack.dequeueDog();
+            stack.dequeueDog();
+            stack.PrintList();
 
             Console.ReadKey();
         }

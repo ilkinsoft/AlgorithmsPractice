@@ -9,15 +9,6 @@ namespace AlgorithmsPractice.Stacks_Queues
         private Stack<int> stack1 = new Stack<int>();
         private Stack<int> stack2 = new Stack<int>();
 
-        public class MyNode
-        {
-            private int data;
-            public MyNode next;
-            public MyNode(int data)
-            {
-                this.data = data;
-            }
-        }
         public void add(int data)
         {
             if (stack2.Count > 0)
