@@ -1,8 +1,10 @@
-﻿using AlgorithmsPractice.LinkedList;
+﻿using AlgorithmsPractice.LeetCode;
+using AlgorithmsPractice.LinkedList;
 using AlgorithmsPractice.Stacks_Queues;
 using AlgorithmsPractice.Strings_Arrays;
 using System;
 using System.Collections.Generic;
+using static AlgorithmsPractice.LeetCode.MergeSortedListsClass;
 
 namespace AlgorithmsPractice
 {
@@ -110,16 +112,35 @@ namespace AlgorithmsPractice
 
 
             // TEST AnimalShelter
-            var stack = new AnimalShelter();
-            stack.enqueue(AnimalShelter.Animal.Cat);
-            stack.enqueue(AnimalShelter.Animal.Cat);
-            stack.enqueue(AnimalShelter.Animal.Dog);
-            stack.enqueue(AnimalShelter.Animal.Cat);
-            stack.enqueue(AnimalShelter.Animal.Dog);
-            stack.enqueue(AnimalShelter.Animal.Cat);
-            stack.dequeueDog();
-            stack.dequeueDog();
-            stack.PrintList();
+            //var stack = new AnimalShelter();
+            //stack.enqueue(AnimalShelter.Animal.Cat);
+            //stack.enqueue(AnimalShelter.Animal.Cat);
+            //stack.enqueue(AnimalShelter.Animal.Dog);
+            //stack.enqueue(AnimalShelter.Animal.Cat);
+            //stack.enqueue(AnimalShelter.Animal.Dog);
+            //stack.enqueue(AnimalShelter.Animal.Cat);
+            //stack.dequeueDog();
+            //stack.dequeueDog();
+            //stack.PrintList();
+
+            // TEST MergeSortedLists
+            //var l1 = new ListNode(1).next = new ListNode(2).next = new ListNode(4);
+            //var l2 = new ListNode(1).next = new ListNode(3).next = new ListNode(4);
+            ////var mergedList = MergeSortedListsClass.MergeTwoLists(l1, l2);
+            //while (l1 != null)
+            //{
+            //    Console.WriteLine(l1.val);
+            //    l1 = l1.next;
+            //}
+
+            // TEST RemoveDuplicates
+            //var nums = new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
+            //RemoveDuplicatesClass.RemoveDuplicates(nums);
+
+            // TEST SearchInsertPosition
+            var nums = new int[] { 1, 3, 5, 6 };
+            int result = SearchInsertPositionClass.SearchInsert(nums, 5);
+            Console.WriteLine(result);
 
             Console.ReadKey();
         }
